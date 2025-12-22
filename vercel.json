@@ -11,5 +11,6 @@
   ],
   "env": {
     "HUGO_VERSION": "0.153.1"
-  }
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/$1/index.html" }]
 }
