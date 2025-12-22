@@ -5,7 +5,7 @@ type: "episode"
 episode_number: 5
 
 # Acast (or similar) audio link — replace with your own if used
-audio_url: "https://media.acast.com/soundmotives/5-max-cooper"
+audio_url: "https://sphinx.acast.com/soundmotives/soundmotives5.maxcooper-mesh-/media.mp3"
 
 guests:
   - max-cooper

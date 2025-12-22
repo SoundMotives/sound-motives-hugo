@@ -5,7 +5,7 @@ type: "episode"
 episode_number: 1
 
 # Acast RSS audio URL — replace if you host audio elsewhere
-audio_url: "https://rss.acast.com/soundmotives/1-shigeto"
+audio_url: "https://sphinx.acast.com/soundmotives/sound-motives-1-shigeto-ghostly-international/media.mp3"
 
 # Guest
 guests:

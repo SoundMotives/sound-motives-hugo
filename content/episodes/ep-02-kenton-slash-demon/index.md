@@ -6,7 +6,7 @@ type: "episode"
 episode_number: 2
 
 # If you have an audio file or RSS playable URL, put it here
-audio_url: "https://rss.acast.com/soundmotives/2-kenton-slash-demon"
+audio_url: "https://sphinx.acast.com/soundmotives/soundmotives2.kentonslashdemon-waaindustry-futureclassic-tartelet-/media.mp3"
 
 # Guest metadata (optional)
 guests:

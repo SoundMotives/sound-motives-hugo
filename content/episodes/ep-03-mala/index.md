@@ -5,7 +5,7 @@ type: "episode"
 episode_number: 3
 
 # Acast RSS audio URL — replace with your own host if you choose
-audio_url: "http://rss.acast.com/soundmotives/soundmotives3.mala/media.mp3"
+audio_url: "https://sphinx.acast.com/soundmotives/soundmotives3.mala/media.mp3"
 
 guests:
   - mala
