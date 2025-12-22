@@ -1,11 +1,16 @@
 {
-  "build": {
-    "env": {
-      "HUGO_VERSION": "0.153.1"
-    },
-    "commands": {
-      "build": "hugo"
-    },
-    "outputDirectory": "public"
+  "version": 2,
+  "builds": [
+    {
+      "src": "config.toml",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "public",
+        "buildCommand": "hugo"
+      }
+    }
+  ],
+  "env": {
+    "HUGO_VERSION": "0.153.1"
   }
 }
