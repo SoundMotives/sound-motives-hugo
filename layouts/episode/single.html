@@ -55,5 +55,31 @@
   {{ end }}
 
   <section class="episode-notes">{{ .Content }}</section>
+
+  <!-- More Episodes -->
+  <section class="more-episodes">
+    <h2>More Episodes</h2>
+    <ul class="more-episodes-grid">
+      {{ $current := . }} {{ range first 5 (where site.RegularPages "Type"
+      "episode") }} {{ if ne .Permalink $current.Permalink }}
+      <li class="more-episode-item">
+        {{ with .Resources.GetMatch "featured*" }} {{ $thumb := .Resize "400x"
+        }}
+        <img
+          src="{{ $thumb.RelPermalink }}"
+          alt="{{ .Title }} thumbnail"
+          class="more-episode-thumb"
+        />
+        {{ end }}
+        <div class="more-episode-info">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.summary }}
+          <p>{{ . }}</p>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }} {{ end }}
+    </ul>
+  </section>
 </article>
 {{ end }}
