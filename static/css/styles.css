@@ -227,6 +227,41 @@ li {
   max-height: 100vh;
   object-fit: cover;
 }
+/* Episode - More episodes */
+
+.more-episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.more-episode-item {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.more-episode-thumb {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.more-episode-info a {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.more-episode-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
 
 /* Sticky Footer */
 
