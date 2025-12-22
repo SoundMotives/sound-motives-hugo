@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <h2>Episodes referencing this sound source</h2>
+  <ul>
+    {{ range where site.Pages "Params.sound_sources" "intersect" (slice .File.BaseFileName) }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}
+
+

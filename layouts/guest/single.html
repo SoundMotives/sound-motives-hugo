@@ -1,0 +1,33 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title | humanize | title }}</h1>
+
+  {{ with .Params.featured_image }}
+    <img src="{{ . }}" alt="{{ $.Title }} featured image" class="featured">
+  {{ end }}
+
+  {{ with .Content }}
+    <div class="guest-bio">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  <h2>Episodes featuring {{ .Title | humanize | title }}</h2>
+  <ul>
+    {{ $guestName := .File.BaseFileName }}
+    {{ range where site.Pages "Params.guests" "intersect" (slice $guestName) }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+
+        {{ if .Params.sound_sources }}
+          – Sound Sources:
+          {{ range .Params.sound_sources }}
+            {{ $source := $.Site.GetPage (printf "sound-sources/%s" .) }}
+            <a href="{{ $source.RelPermalink }}">{{ $source.Title }}</a>
+          {{ end }}
+        {{ end }}
+      </li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

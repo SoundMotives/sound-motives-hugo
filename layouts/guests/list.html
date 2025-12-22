@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>Guests</h1>
+
+<ul>
+  {{ range .Pages.ByTitle }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+  {{ end }}
+</ul>
+{{ end }}

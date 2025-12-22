@@ -1,0 +1,66 @@
+{{ define "main" }}
+<article class="episode">
+
+  <header class="episode-header">
+    <h1>{{ .Title }}</h1>
+
+{{ with .Resources.GetMatch "featured*" }}
+  {{ $resized := .Fit "1200x600" }}  <!-- width x height, preserves aspect ratio -->
+  <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }} featured image">
+{{ end }}
+
+    {{ with .Params.summary }}
+      <p class="episode-summary">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.audio_url }}
+      <audio controls src="{{ . }}"></audio>
+    {{ end }}
+  </header>
+
+  {{ if .Params.guests }}
+    <section class="episode-meta">
+      <h3>Guest</h3>
+      <ul>
+        {{ range .Params.guests }}
+          <li><a href="/guests/{{ . }}">{{ . | humanize }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+    {{ if .Params.tracklist }}
+    <section class="episode-tracklist">
+      <h3>Tracklist</h3>
+      <ul>
+        {{ range .Params.tracklist }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+  {{ if .Params.sound_sources }}
+    <section class="episode-meta">
+      <h3>Sound Sources</h3>
+      <ul class="sound-source-list">
+        {{ range .Params.sound_sources }}
+          {{ $source := $.Site.GetPage (printf "sound-sources/%s" .) }}
+          {{ if $source }}
+            <li>
+              <a href="{{ $source.RelPermalink }}">{{ $source.Title }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+
+
+  <section class="episode-notes">
+    {{ .Content }}
+  </section>
+
+
+</article>
+{{ end }}
