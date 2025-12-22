@@ -1,6 +1,9 @@
-.guest-ref::before { content: " ["; }
-.guest-ref::after  { content: "]"; }
-
+.guest-ref::before {
+  content: " [";
+}
+.guest-ref::after {
+  content: "]";
+}
 
 :root {
   --text: #111;
@@ -11,7 +14,7 @@
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
@@ -26,8 +29,11 @@ main {
 
 /* Headers */
 
-h1, h2, h3, h4 {
-  font-family: 'Inter', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
   letter-spacing: -0.02em;
 }
 
@@ -58,7 +64,7 @@ nav {
 }
 
 nav a {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -100,7 +106,7 @@ li {
 /* Referenced by  */
 
 .referenced-by {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   color: var(--muted);
   margin-left: 0.25rem;
@@ -131,4 +137,38 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* sound sources on home */
+
+.sound-sources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 1rem; /* space between items */
+  list-style: none;
+  padding: 0;
+}
+
+.sound-sources-grid li {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sound-source-item {
+  background: #f7f7f7; /* subtle background */
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .sound-sources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sound-sources-grid {
+    grid-template-columns: 1fr;
+  }
 }

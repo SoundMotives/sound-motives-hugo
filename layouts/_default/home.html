@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="homepage">
+  <h1>{{ .Title }}</h1>
+  <div class="intro">{{ .Content }}</div>
+
+  <h2>Latest Episodes</h2>
+  <ul>
+    {{ range first 5 (where site.RegularPages "Type" "episode") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Params.summary }}
+    </li>
+    {{ end }}
+  </ul>
+  <h2>Sound Sources</h2>
+  <ul class="sound-sources-grid">
+    {{ range first 15 (shuffle (where site.RegularPages "Type" "sound-source"))
+    }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</article>
+{{ end }}

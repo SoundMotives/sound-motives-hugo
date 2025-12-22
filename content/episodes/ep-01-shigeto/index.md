@@ -21,29 +21,29 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "In this episode, Zach ‘Shigeto’ Saginaw reflects on his musical beginnings — from Ann Arbor to Detroit — discussing how jazz, electronic music, and local scenes shaped his sound."
+summary: "Zach ‘Shigeto’ Saginaw reflects on his musical beginnings — from Ann Arbor to Detroit — discussing how jazz, electronic music, and local scenes shaped his sound."
 
 # Optional fields
 duration: "50:29"
 tracklist:
-- "Shigeto – Detroit (Part 1) (Ghostly)"
-- "Shigeto – Ann Arbor (Parts 3 & 4) (Ghostly)"
-- "John Coltrane – Resolution (Impulse!)"
-- "Lusine – Drip (Ghostly)"
-- "Matthew Dear – Fex (Ghostly)"
-- "Boards of Canada – Beautiful Place Out In The Country (Warp)"
-- "Medina Green – Crosstown Beef (Rawkus Records)"
-- "Dabrye – Hyped Up Plus Tax  (Ghostly)"
-- "Brian Blade Fellowship – Folklore (Blue Note)"
-- "Dabrye – Hyped Up Plus Tax  (Ghostly)"
-- "Shigeto – May (Ghostly)"
-- "Shigeto – No Better Time Than Now (Ghostly)"
-- "Shigeto – Perfect Crime (Ghostly)"
-- "Mount Kimbie – Maybes (Hotflush)"
-- "Mount Kimbie – Made To Stray (Warp)"
-- "Shigeto – Ring Leader (Ghostly)"
-- "Shigeto – First Saturn Return (Ghostly)"
-- "Shigeto – Tide Pools (Ghostly)"
+  - "Shigeto – Detroit (Part 1) (Ghostly)"
+  - "Shigeto – Ann Arbor (Parts 3 & 4) (Ghostly)"
+  - "John Coltrane – Resolution (Impulse!)"
+  - "Lusine – Drip (Ghostly)"
+  - "Matthew Dear – Fex (Ghostly)"
+  - "Boards of Canada – Beautiful Place Out In The Country (Warp)"
+  - "Medina Green – Crosstown Beef (Rawkus Records)"
+  - "Dabrye – Hyped Up Plus Tax  (Ghostly)"
+  - "Brian Blade Fellowship – Folklore (Blue Note)"
+  - "Dabrye – Hyped Up Plus Tax  (Ghostly)"
+  - "Shigeto – May (Ghostly)"
+  - "Shigeto – No Better Time Than Now (Ghostly)"
+  - "Shigeto – Perfect Crime (Ghostly)"
+  - "Mount Kimbie – Maybes (Hotflush)"
+  - "Mount Kimbie – Made To Stray (Warp)"
+  - "Shigeto – Ring Leader (Ghostly)"
+  - "Shigeto – First Saturn Return (Ghostly)"
+  - "Shigeto – Tide Pools (Ghostly)"
 ---
 
 ## Episode Notes
@@ -53,9 +53,11 @@ During the summer of 2014, I got to meet drummer, producer, and Ghostly Internat
 ## Sound Sources
 
 ### Ann Arbor, Michigan
-Growing up in Ann Arbor, Michigan, has had a significant influence on Zach’s output. As well as appearing in the titles of a number of his productions,  the landscapes of his hometown frequently feature on his beautiful Instagram.
+
+Growing up in Ann Arbor, Michigan, has had a significant influence on Zach’s output. As well as appearing in the titles of a number of his productions, the landscapes of his hometown frequently feature on his beautiful Instagram.
 
 ### John Coltrane – A Love Supreme
+
 As a youngster growing up in Michigan, Zach Shigeto dreamt of being a professional jazz musician, and the albums listed below played a significant role in his early musical education:
 
 Pharaoh Sanders – The Creator Has A Master Plan
@@ -68,6 +70,7 @@ John Coltrane’s A Love Supreme was recorded in late 1964 and released on Impul
 {{< video src="https://www.youtube.com/embed/ll3CMgiUPuU" title="John Coltrane Video" >}}
 
 ### Dabrye – One:Three
+
 In High School, Shigeto discovered electronic music through local label Ghostly International. Below are a number of the key releases that initially opened his ears up to electronic music:
 
 Matthew Dear – Leave Luck to Heaven
@@ -79,17 +82,16 @@ But a key record for the young jazz head was Dabrye – One:Three, which came ou
 
 {{< video src="https://www.youtube.com/embed/p4qJOFciTjc" title="Dabrye Video" >}}
 
-
 ### Brian Blade – Fellowship
+
 Shigeto headed east for college, to continue his jazz drumming development at The New School, New York. At the time, one of his idols and a big influence on his drumming style was Brian Blade, particularly the 1998 album, ‘Fellowship’, and namely the track ‘Folklore’.
 
 Today, Brian continues to head up The Fellowship, whilst also collaborating with Joni Mitchell, Bob Dylan, and touring with Wayne Shorter.
 
 {{< video src="https://www.youtube.com/embed/6qwv2f5m0xM" title="Brian Blade Video" >}}
 
-
 ### Reason
-Having dropped out of college and moved to London, Zach developed tendonitis, which meant he couldn’t play the drums for several months. To deal with the depression that came with this injury, his brother encouraged him to try producing rather than playing. This opened up a whole new world of music opportunities to Zac, allowing him to create his debut New Crossings EP in 2008.
 
+Having dropped out of college and moved to London, Zach developed tendonitis, which meant he couldn’t play the drums for several months. To deal with the depression that came with this injury, his brother encouraged him to try producing rather than playing. This opened up a whole new world of music opportunities to Zac, allowing him to create his debut New Crossings EP in 2008.
 
 Click the picture below to check a great XLR8R article from last year that goes in deep with Shigeto on a production tip.
