@@ -4,7 +4,7 @@
 <ul class="episode-list">
   {{ range .Pages.ByDate.Reverse }}
   <li class="episode-item">
-    {{ with .Resources.GetMatch "featured*" }} {{ $thumb := .Resize "350x" }}
+    {{ with .Resources.GetMatch "featured*" }} {{ $thumb := .Resize "300x" }}
     <!-- 300px wide, auto height -->
     <img
       src="{{ $thumb.RelPermalink }}"

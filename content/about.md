@@ -12,3 +12,5 @@ Guests are invited to reflect on the music that mattered to them at different po
 Episodes move freely between genres and eras — from jazz and classical to jungle, dubstep, ambient, and electronic music — with an emphasis on curiosity, context, and personal storytelling.
 
 Sound Motives is about listening more closely: to music, to process, and to the often unseen influences that connect artists across generations.
+
+Get in touch - dave@soundmotives.net.

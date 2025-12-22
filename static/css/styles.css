@@ -198,6 +198,12 @@ li {
   color: #555;
 }
 
+.episode-summary {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
 /* Sticky Footer */
 
 html,
@@ -223,9 +229,23 @@ main {
   padding: 2rem;
 }
 
-footer {
+/* footer {
   background-color: #222;
   color: white;
   padding: 1rem;
   text-align: center;
+} */
+
+footer {
+  background: #fafafa; /* very light grey */
+  border-top: 1px solid #e6e6e6;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
 }
