@@ -14,8 +14,8 @@
 
   <h2>Sound Sources</h2>
   <ul class="sound-sources-grid">
-    {{ $sources := shuffle (where site.RegularPages "Type" "sound-source") }} {{
-    range first 15 $sources }}
+    {{ $sources := shuffle (where site.RegularPages "Type" "sound-source") }}
+    {{range first 15 $sources }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{ end }}
   </ul>
