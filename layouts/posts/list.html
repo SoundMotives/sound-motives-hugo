@@ -1,0 +1,30 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<ul class="episode-list posts-list">
+  {{ range .Pages.ByDate.Reverse }}
+  <li class="episode-item post-item">
+    {{ with .Resources.GetMatch "featured*" }} {{ $thumb := .Resize "300x" }}
+    <img
+      src="{{ $thumb.RelPermalink }}"
+      alt="{{ $.Title }} thumbnail"
+      class="episode-thumb"
+    />
+    {{ end }}
+    <div class="episode-text post-text">
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{ with .Params.summary }}
+      <p>{{ . }}</p>
+      {{ end }} {{ with .Params.sound_sources }}
+      <ul class="post-sources">
+        {{ range . }} {{ $source := $.Site.GetPage (printf "sound-sources/%s" .)
+        }} {{ if $source }}
+        <li>{{ $source.Title }}</li>
+        {{ end }} {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

@@ -1,0 +1,63 @@
+{{ define "main" }}
+<article class="episode post">
+  <header class="episode-header post-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Params.summary }}
+    <p class="episode-summary post-summary">{{ . }}</p>
+    {{ end }} {{ with .Params.audio_url }}
+    <section class="episode-audio post-audio">
+      <audio controls src="{{ . }}"></audio>
+    </section>
+    {{ end }} {{ with .Resources.GetMatch "featured*" }} {{ $resized := .Fill
+    "1600x900" }}
+    <figure class="episode-hero post-hero">
+      <img
+        src="{{ $resized.RelPermalink }}"
+        alt="{{ $.Title }} featured image"
+      />
+    </figure>
+    {{ end }}
+  </header>
+
+  {{ if .Params.sound_sources }}
+  <section class="episode-meta post-sound-sources">
+    <h3>Sound Sources</h3>
+    <ul class="sound-source-list">
+      {{ range .Params.sound_sources }} {{ $source := $.Site.GetPage (printf
+      "sound-sources/%s" .) }} {{ if $source }}
+      <li><a href="{{ $source.RelPermalink }}">{{ $source.Title }}</a></li>
+      {{ end }} {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+  <section class="episode-notes post-notes">{{ .Content }}</section>
+
+  <!-- Other Posts -->
+  <section class="more-episodes more-posts">
+    <h2>Other Posts</h2>
+    <ul class="more-episodes-grid">
+      {{ $current := . }} {{ $posts := where site.RegularPages "Type" "post" }}
+      {{ range first 5 (where $posts "Permalink" "ne" $current.Permalink) }}
+      <li class="more-episode-item more-post-item">
+        {{ with .Resources.GetMatch "featured*" }} {{ $thumb := .Resize "400x"
+        }}
+        <img
+          src="{{ $thumb.RelPermalink }}"
+          alt="{{ .Title }} thumbnail"
+          class="more-episode-thumb more-post-thumb"
+        />
+        {{ end }}
+        <div class="more-episode-info more-post-info">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.summary }}
+          <p>{{ . }}</p>
+          {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+</article>
+{{ end }}
