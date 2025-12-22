@@ -7,10 +7,11 @@
   <ul>
     {{ range first 5 (where site.RegularPages "Type" "episode") }}
     <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Params.summary }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> – {{ .Params.summary }}
     </li>
     {{ end }}
   </ul>
+
   <h2>Sound Sources</h2>
   <ul class="sound-sources-grid">
     {{ $sources := shuffle (where site.RegularPages "Type" "sound-source") }} {{
