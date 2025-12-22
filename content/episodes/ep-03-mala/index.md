@@ -20,7 +20,7 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "Mala — DJ, producer, promoter, and co‑founder of Digital Mystikz — explores his early influences from jungle and dub to club culture, discussing the evolution of dubstep, the role of Deep Medi, and how his sound has developed over time."
+summary: "DJ, producer, promoter, and co‑founder of Digital Mystikz — Mala - explores his early influences from jungle and dub to club culture, discussing the evolution of dubstep, the role of Deep Medi, and how his sound has developed over time."
 
 # Optional (helpful later if you want structured tracklists)
 tracklist:

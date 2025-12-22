@@ -22,7 +22,7 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "Paul White reflects on his journey from the British beats scene and sampling heritage to traditional songwriting and broad artistic influences, discussing his evolution and creative philosophy."
+summary: "Producer Paul White reflects on his journey from the British beats scene and sampling heritage to traditional songwriting and broad artistic influences, discussing his evolution and creative philosophy."
 
 tracklist:
   - "Paul White – Waves (R&S Recordings)"

@@ -20,7 +20,7 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "Max Cooper — producer and visual-music collaborator — discusses his musical journey from his early days in Northern Ireland through academic research and experimental approaches to sound, sharing how eclectic influences shaped his philosophy and practice."
+summary: "Producer and visual-music collaborator - Max Cooper - discusses his musical journey from his early days in Northern Ireland through academic research and experimental approaches to sound, sharing how eclectic influences shaped his philosophy and practice."
 
 tracklist:
   - "Max Cooper – Repetition (Mesh)"

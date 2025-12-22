@@ -23,7 +23,7 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "Silas Moldenhawer of Kenton Slash Demon discusses the duo’s origins, their early musical influences, approaches to sampling, the Copenhagen scene, and how remixes and collaborators shaped their work."
+summary: "Silas Moldenhawer - one half of Kenton Slash Demon - discusses the duo’s origins, their early musical influences, approaches to sampling, the Copenhagen scene, and how remixes and collaborators shaped their work."
 
 # Additional (optional) fields you might use later
 duration: "67:06" # approximate runtime from podcast listings

@@ -21,7 +21,7 @@ sound_sources:
 
 featured_image: "featured.jpg"
 
-summary: "Zach ‘Shigeto’ Saginaw reflects on his musical beginnings — from Ann Arbor to Detroit — discussing how jazz, electronic music, and local scenes shaped his sound."
+summary: "Zach Saginaw AKA Shigeto reflects on his musical beginnings — from Ann Arbor to Detroit — discussing how jazz, electronic music, and local scenes shaped his sound."
 
 # Optional fields
 duration: "50:29"
